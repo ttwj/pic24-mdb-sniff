@@ -16,13 +16,23 @@ How is this different from other "sniffers"?
 =====
 As the MDB Protocol regretfully lacks a reliable SOH/ETX method, most implementations work by performing a checksum on the incoming bytes to differenciate incoming payloads. There might be scenarios where the checksum is equal to an incoming byte, leading to truncation of data.
 
-We use a time-based logic which measures the inter-byte interval to reliably differenciate commands, and use a more advanced version of this code in our commercial MDB solutions for implementing the 10H and 60H cashless device.
+We use a time-based logic which measures the inter-byte interval to reliably differenciate commands.
+In fact we use a more advanced version of this code in our commercial MDB/VCCS+JVMA (yes, the pesky Japanese protocol) solutions for implementing the 10H and 60H cashless device.
+
+The MDB Sniffer approach is also useful in obtaining data from the coin/cash peripherals by implementing the CASH SALE protocol.
 
 Why on earth do you use Microchip PIC in 2019??
 =====
 - It is a good learning experience (especially for students who previously only dealt with Arduino)
-- It has a pretty good IDE (MPLab, Microchip purchased Atmel recently also)
+- It has a pretty good IDE 
+- The Japanese use it in their vending machine equipment 
 - It cannot be easily reverse engineered (Search 抄板解密打样 “Copy board, rip firmware & make a prototype” on Taobao)
+
+Hi guys, can you share more about VCCS/JVMA please?? :))
+=====
+Reverse engineering is an epic (and costly) journey to the center of one’s soul.
+
+Drop us a note at hello@beepbeep.tech
 
 License
 =====
