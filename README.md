@@ -18,6 +18,12 @@ As the MDB Protocol regretfully lacks a reliable SOH/ETX method, most implementa
 
 We use a time-based logic which measures the inter-byte interval to reliably differenciate commands, and use a more advanced version of this code in our commercial MDB solutions for implementing the 10H and 60H cashless device.
 
+Why on earth do you use Microchip PIC in 2019??
+=====
+- It is a good learning experience (especially for students who previously only dealt with Arduino)
+- It has a pretty good IDE (MPLab, Microchip purchased Atmel recently also)
+- It cannot be easily reverse engineered (Search 抄板解密打样 “Copy board, rip firmware & make a prototype” on Taobao)
+
 License
 =====
 This is released under the Mozilla Public License 2.0
