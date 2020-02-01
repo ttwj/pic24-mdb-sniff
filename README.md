@@ -7,7 +7,7 @@ By Beep Technologies Pte Ltd
 
 What is this
 ======
-MDB (Multi Drop Bus) Protocol is a popular protocol vending machines to communicate with their peripherals (e.g: Coin, Bill and Card devices) 
+MDB (Multi Drop Bus) Protocol is a popular protocol for American & European vending machines to communicate with their peripherals (e.g: Coin, Bill and Card devices) 
 - https://www.ccv.eu/wp-content/uploads/2018/05/mdb_interface_specification.pdf
 - This code enables one to analyze the incoming data from the 9 bit serial channel for debugging purposes
 
